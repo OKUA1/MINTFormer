@@ -1,0 +1,28 @@
+[build-system]
+
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dependencies = [
+"tensorflow-cpu>=2.8.0",
+"tensorflow-addons>=3.0.0"
+]
+
+name = "mintformer-tf"
+version = "0.1.0"
+authors = [
+  { name="Oleg Kostromin", email="kostromin97@gmail.com" },
+]
+description = ""
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8s"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+gpu = ["tensorflow>=2.8.0"]
